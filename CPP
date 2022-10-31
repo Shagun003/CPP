@@ -18,7 +18,6 @@ void displaylist(struct node*p)
       ptr->next=head;
       return ptr;
  }
-int main()
 {   struct node*head,*one,*two;
     one=(struct node*)malloc(sizeof(one->data));
     two=(struct node*)malloc(sizeof(two->data));
