@@ -10,7 +10,7 @@ void displaylist(struct node*p)
         p=p->next;
      }
   }
- struct node*insertatfirst(struct node*head,int data)
+ struct node*(struct node*head,int data)
  {   printf("enter element to be insert at first=");
     scanf("%d",&data);
      struct node*ptr=(struct node*)malloc(sizeof(ptr->data));
