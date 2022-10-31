@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include<stdlib.h>
+struct node
+{   int data;
+    struct node *next;
+};
+void displaylist(struct node*p)
+ {   while(p!=NULL)
+     {  printf("element=%d\n",p->data);
+        p=p->next;
+     }
+  }
+ struct node*insertatfirst(struct node*head,int data)
+ {   printf("enter element to be insert at first=");
+    scanf("%d",&data);
+     struct node*ptr=(struct node*)malloc(sizeof(ptr->data));
+      ptr->data=data;
+      ptr->next=head;
+      return ptr;
+ }
+int main()
+{   struct node*head,*one,*two;
+    one=(struct node*)malloc(sizeof(one->data));
+    two=(struct node*)malloc(sizeof(two->data));
+    
+    one->data=66;
+    two->data=98;
+    
+    one->next=two;
+    two->next=NULL;
+    head=one;
+    printf("link list :\n");
+    displaylist(head);
+    int data;
+    head=insertatfirst(head,data);
+    printf("link list after insertion:\n");
+    displaylist(head);
+    return 0;
+}
